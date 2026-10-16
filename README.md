@@ -22,6 +22,7 @@ La razón del porque usar Brave como navegador son:
 Algunos Errores y sus respectivas correcciones fueron:
 1. Selenium abria directamente un perfil nuevo en el navegador, detectad como un bot por Instagram y mostrando el mensaje genérico "La información de inicio de sesión que ingresaste es incorrecta" corregido con las credenciales guardadas, lo que vendría a ser las cookies de inicio de sesión que funcionan como llave de ingreso para el scrapeo.
 2. La versión de Chromium utilizada por Selenium fallaba al conectarse con Brave al estar desactualizada, se optó por descargar chromedriver-win64.zip de la versión 155.0.8059.39 se paso a 155.0.8059.80 para estar actualizada a la versión 1.97.57 de Brave.
+3. Para conectar el perfil de Brave junto con Selenium y no abriera uno nuevo, se añadió dentro del código una ruta hacia el perfil de Usuario de Windows y otra hacia el perfil Default de Brave.
 
 Consideraciones:
 1. El código fue realizado en Visual Studio Code versión 1.142.0
